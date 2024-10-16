@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ge">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ონლაინ ჟურნალი</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-page" class="centered">
+        <h1>ავტორიზაცია</h1>
+        <form id="login-form">
+            <div class="input-container">
+                <label for="email">ემაილი:</label>
+                <input type="email" id="email" required placeholder="შეიყვანე ელფოსტა">
+            </div>
+            <div class="input-container">
+                <label for="password">პაროლი:</label>
+                <input type="password" id="password" required placeholder="შეიყვანე პაროლი">
+            </div>
+            <button type="submit">შესვლა</button>
+        </form>
+    </div>
+
+    <div id="main-page" style="display: none;">
+        <header>
+            <div class="header-content">
+                <div class="author">Giorgi Macharashvili</div>
+            </div>
+        </header>
+
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">მთავარი</a></li>
+                <li><a href="#">კლასები</a></li>
+                <li><a href="#">საგნები</a></li>
+                <li><a href="#">სადამრიგებლო</a></li>
+                <li><a href="#">საშვები</a></li>
+            </ul>
+        </div>
+
+        <main>
+            <h1>კლასების სია</h1>
+            <form id="class-form">
+                <label for="class-input">დაამატე ახალი კლასი:</label>
+                <input type="text" id="class-input" placeholder="შეიყვანე კლასის სახელი">
+                <button type="submit">შენახვა</button>
+            </form>
+
+            <ul id="class-list"></ul>
+
+            <div class="date-container">
+                <p>თარიღი: <span id="current-date"></span></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
